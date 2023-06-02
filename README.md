@@ -1,7 +1,7 @@
 Arkivum v6 API documentation
 ============================
 
-The API documentation is available in the GitHub Pages site of this repository using the [Swagger UI](https://github.com/swagger-api/swagger-ui) and is made possible using a [template repository created by Peter Evans](https://peterevans.dev/posts/how-to-host-swagger-docs-with-github-pages/)
+The API documentation is available in the [GitHub Pages site of this repository](https://uol-library.github.io/arkivum-api/) using [Swagger UI](https://github.com/swagger-api/swagger-ui) and is made possible using a [template repository created by Peter Evans](https://peterevans.dev/posts/how-to-host-swagger-docs-with-github-pages/)
 
 The Ingest API endpoint
 -----------------------

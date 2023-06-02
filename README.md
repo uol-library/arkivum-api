@@ -25,23 +25,23 @@ The ingested files go through a number of stages of processing to check their in
 
 <dl>
 <dt>ingestPath</dt>
-<dd><code>[String]</code> (required)<br>The path within the ingest location to files (or file) to be ingested, should be URL encoded</dd>
+<dd><code>[String]</code> (required) The path within the ingest location to files (or file) to be ingested, should be URL encoded</dd>
 <dt>metadataPath</dt>
 <dd><code>[String]</code> The path within the ingest location to a metadata file, should be URL encoded</dd>
 <dt>datapool</dt>
-<dd><code>[String]</code><br>The name of the datapool into which files are to be ingested, should be URL encoded. Defaults to the default datapool</dd>
+<dd><code>[String]</code> The name of the datapool into which files are to be ingested, should be URL encoded. Defaults to the default datapool</dd>
 <dt>folderPath</dt>
-<dd><code>[String]</code><br>The folder path used to prefix files paths being ingested, should be URL encoded</dd>
+<dd><code>[String]</code> The folder path used to prefix files paths being ingested, should be URL encoded</dd>
 <dt>jobTag</dt>
-<dd><code>[String]</code><br>A tag to be used to link related ingests, should be URL encoded</dd>
+<dd><code>[String]</code> A tag to be used to link related ingests, should be URL encoded</dd>
 <dt>unpack</dt>
-<dd><code>[Boolean]</code><br>Whether archives detected in the ingest location are unpacked or ingested without unpacking. Defaults to false</dd>
+<dd><code>[Boolean]</code> Whether archives detected in the ingest location are unpacked or ingested without unpacking. Defaults to false</dd>
 <dt>isArchive</dt>
-<dd><code>[Boolean]</code><br>Whether archives detected in the ingest location are unpacked before the ingest begins or ingested without unpacking. Defaults to false</dd>
+<dd><code>[Boolean]</code> Whether archives detected in the ingest location are unpacked before the ingest begins or ingested without unpacking. Defaults to false</dd>
 <dt>splitterChildren</dt>
-<dd><code>[Integer]</code><br>This only applies when the ingest is into a datapool which has preservation enabled. The maximum number of files under a collection or object which can be preserved in one job. Above the threshold files are allocated to separate preservation jobs. Defaults to 10,000</dd>
+<dd><code>[Integer]</code> This only applies when the ingest is into a datapool which has preservation enabled. The maximum number of files under a collection or object which can be preserved in one job. Above the threshold files are allocated to separate preservation jobs. Defaults to 10,000</dd>
 <dt>locationId</dt>
-<dd><code>[String]</code><br>The identifier of an ingest location. Defaults to the first ingest location.</dd>
+<dd><code>[String]</code> The identifier of an ingest location. Defaults to the first ingest location.</dd>
 </dl>
 
 The `locationId` is visible on the UI:
@@ -74,9 +74,9 @@ Typical values will be 404 ‘Resource Not Found’ or 400 ‘Bad Request’, bu
 
 <dl>
 <dt>errorMessage</dt>
-<dd><code>[String]</code><br>An error message given the reason for failure</dd>
+<dd><code>[String]</code> An error message given the reason for failure</dd>
 <dt>errorDetails</dt>
-<dd><code>[array[String]]</code><br>A list of specific error conditions which have contributed to the overall failure.</dd>
+<dd><code>[array[String]]</code> A list of specific error conditions which have contributed to the overall failure.</dd>
 </dl>
 
 **Example Response**
@@ -102,7 +102,7 @@ Track the status of an ingest
 
 <dl>
 <dt>ingestId</dt>
-<dd><code>[String]</code> (required)<br>The identifier of the ingest job</dd>
+<dd><code>[String]</code> (required) The identifier of the ingest job</dd>
 </dl>
 
 **Example Request**
